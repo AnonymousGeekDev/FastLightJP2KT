@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageDetailActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="468dp"
+        android:layout_height="645dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/decoding_time_view"
+        android:layout_width="163dp"
+        android:layout_height="121dp"
+        android:text="Decoding Time"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cpu_usage_view"
+        android:layout_width="150dp"
+        android:layout_height="121dp"
+        android:text="CPU Usage"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/decoding_time_view" />
+
+    <TextView
+        android:id="@+id/memory_usage_view"
+        android:layout_width="159dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Memory Used"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cpu_usage_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
